@@ -1,8 +1,13 @@
+import LogoutButton from "../Components/LogoutButton";
+import ShowRecepiList from "../Components/RecepiComponents/RecepiList";
 
 function Index(){
 
     return(
-<div>hello</div>
+        <>
+    <LogoutButton></LogoutButton>
+    <ShowRecepiList></ShowRecepiList>
+    </>
     );
 }
 export default Index

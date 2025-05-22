@@ -1,4 +1,4 @@
-import { globalAuthContext } from "../Components/AuthCreateContext";
+import { globalAuthContext } from "../Context/AuthCreateContext";
 import { useNavigate } from 'react-router-dom';
 import {useRef, useState, useEffect, useContext} from "react";
 
@@ -60,7 +60,7 @@ function LoginPage(){
                     value={formData.password}
                     onChange={handleChange}
                 />
-                  <button type="submit">Search</button>
+                  <button type="submit">Login</button>
 </form>
     );
 }

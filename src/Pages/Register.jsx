@@ -76,7 +76,7 @@ function RegisterPage(){
                     value={formData.lastName}
                     onChange={handleChange}
                 />
-    <button type="submit">Search</button>
+    <button type="submit">Register</button>
 </form>
     );
 }
