@@ -36,7 +36,20 @@ useEffect(() => {
 
     return (
         <>
-        
+        <div style={{
+          display:'flex',
+          height:'400px',
+          justifyContent: 'space-around',
+  
+          }}>
+    <img src={recipe.imgUrl}  style={{ 
+
+               width: '400px', 
+                height: '100%', 
+                objectFit: 'cover',
+              
+              }} ></img>
+    </div>
     <p>{recipe.name}</p>
     <p>{recipe.description}</p>
      <p>{recipe.cookingInstructions}</p>
