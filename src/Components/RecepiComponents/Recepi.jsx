@@ -1,7 +1,7 @@
 
 import { useNavigate, Link } from 'react-router-dom';
 
-function ShowRecepy({recipes}){
+function ShowRecepy({ recipes }){
     const navigate = useNavigate();
 
 

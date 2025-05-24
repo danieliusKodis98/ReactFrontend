@@ -1,6 +1,6 @@
 import ShowRecepy from "./Recepi";
-import {useRef, useState, useEffect, useContext} from "react";
-function ShowRecepiList(){
+import {useRef, useState, useEffect, useContext, useCallback, useMemo} from "react";
+function ShowRecepiList({value}){
 
  const [recipes, setRecipes] = useState([]);
   const [currPage, setCurrPage] = useState(() => {
@@ -19,18 +19,23 @@ function ShowRecepiList(){
     const down =()=>{
         if(currPage > 1){
             setCurrPage(prev => prev - 1);
-            sessionStorage.setItem('currPage', currPage);
+         
         }
        }
     const up = ()=>{
-        if(currPage < Math.ceil(recipes.length / postsPerPage)){
+        if(currPage < Math.ceil(filterRecipes.length / postsPerPage)){
             setCurrPage(prev => prev + 1);
-            sessionStorage.setItem('currPage', currPage);
+         
         }
     }
-   
+const filterRecipes = useMemo(() => {
+  if (!value) return recipes;
+  return recipes.filter((recipe) =>
+    recipe.name.toLowerCase().includes(value.toLowerCase())
+  );
+}, [recipes, value]);
 
-    const currRecepies = recipes.slice(firstPostIndex, lastPostIndex);
+    const currRecepies = filterRecipes.slice(firstPostIndex, lastPostIndex);
   useEffect(() => {
     const token = localStorage.getItem('token');
         fetch('http://localhost:8080/recepi',{
@@ -54,6 +59,7 @@ function ShowRecepiList(){
             });
     }, []);
 
+    
     return (
 <div>
     <h1>Receptų sarašas:</h1>
