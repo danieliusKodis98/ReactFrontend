@@ -1,0 +1,92 @@
+body{
+}
+.header{
+    max-width: 1500px;
+    margin-top: 0px;
+    width:100%;
+    background-color: #73946B;
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+}
+.right{
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.middle{
+}
+.left{
+    display: flex;
+    flex-direction: row;
+}
+.homeButton{
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 25px;
+    display: flex;
+     align-items: center;
+  justify-content: center;
+}
+.homeButton:hover{
+      background-color: #377697;
+}
+.searchBox{
+    max-width: 500px;
+    height: 25px;
+    background-color: #D2D0A0;
+    display: inline;
+}
+.searchButton{
+ 
+    color: rgb(167, 167, 194);
+    background-color: #183B4E;
+      width: 55px;
+  height: 40px;
+  padding: 0;
+  border-radius: 0;
+display: inline;
+  align-items: center;
+  justify-content: center;
+}
+.searchButton:hover{
+background-color: #377697;
+color: aquamarine;
+}
+.favoriteButton{
+            display: flex;
+     align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  padding-left: 5px;
+    padding-right: 5px;
+}
+.favoriteButton:hover{
+    background-color: #377697;
+color: aquamarine;
+}
+.uploadButton{
+            display: flex;
+     align-items: center;
+  justify-content: center;
+   margin-right: 20px;
+   padding-left: 5px;
+    padding-right: 5px;
+}
+.uploadButton:hover{
+    background-color: #377697;
+color: aquamarine;
+}
+.logOutButton{
+        display: flex;
+     align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+    padding-right: 5px;
+}
+.logOutButton:hover{
+background-color: #377697;
+color: aquamarine;
+}

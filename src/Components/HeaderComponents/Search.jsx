@@ -1,23 +1,26 @@
 import { createContext, useState } from "react";
-
+import '../Header.css'
 function Searchbar({value, setValue}){
     
-   
+   const [input, setInput] = useState([value]);
 
+   function onClick(){
+    setValue(input);
+   }
    return (
 <>
 <div >
-      <input
+      <input className="searchBox"
         type="text"
         /*className={styles.textbox}*/
         placeholder="Search data..."
-        value={value}
+        value={input}
         onChange={(e) => {
-          setValue(e.target.value);
+         setInput(e.target.value);
         }}
       />
       
-      <button onClick={ ()=>setValue("")}>clear</button>
+      <button className="searchButton" onClick={ onClick}>Search</button>
     </div>
 </>
     );

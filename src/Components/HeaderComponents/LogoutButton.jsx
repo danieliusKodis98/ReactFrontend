@@ -1,6 +1,7 @@
-import { globalAuthContext } from "../Context/AuthCreateContext";
+import { globalAuthContext } from "../../Context/AuthCreateContext";
 import { useNavigate } from 'react-router-dom';
 import {useRef, useState, useEffect, useContext} from "react";
+import '../Header.css'
 function LogoutButton(){
 
  const {  logout } = useContext(globalAuthContext);
@@ -18,7 +19,7 @@ function LogoutButton(){
 
 
     return(
-    <button onClick={logout2}>Log out</button>
+    <div className = "logOutButton" onClick={logout2}>Log out</div>
     );
 }
 export default LogoutButton
