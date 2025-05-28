@@ -1,0 +1,10 @@
+
+.rightSidebar{
+    width: 250px;
+    margin-top: 50px;
+    position: fixed;
+    background-color: beige;
+    right: 0;
+    margin-right: 200px;
+   
+}
