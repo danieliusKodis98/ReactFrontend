@@ -27,12 +27,12 @@ function UploadRecepi({ value, onChange }) {
     <div className="AddRecepiField">
       <label>Select Ingredient:</label>
       <select
-        value={value.ingredientName}
-        onChange={(e) => onChange('ingredientName', e.target.value)}
+        value={value.ingredientId}
+        onChange={(e) => onChange('ingredientId', e.target.value)}
       >
         <option value="">Select Ingredient</option>
         {ingredients.map((ingredient) => (
-          <option key={ingredient.id} value={ingredient.name}>
+          <option key={ingredient.id} value={ingredient.id}>
             {ingredient.name}
           </option>
         ))}

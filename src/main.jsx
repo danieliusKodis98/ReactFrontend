@@ -10,6 +10,7 @@ import RegisterPage from './Pages/Register.jsx'
 import Index from './Pages/index.jsx'
 import RecepiPage from './Components/RecepiComponents/RecepiPage.jsx'
 import UploadPage from './Pages/UploadPage.jsx'
+import MyRecipe from './Components/HeaderComponents/MyRecipe.jsx'
 const router = createBrowserRouter([
   {path: "/", element: <FirstPage></FirstPage>},
   {path: "/login", element: <LoginPage></LoginPage>},
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {path: "/index", element: <Index></Index>},
    {path: "/index/:id", element: <RecepiPage></RecepiPage>},
    {path: "/upload", element: <UploadPage></UploadPage>},
+   {path: "/myRecepies", element: <MyRecipe></MyRecipe>}
 ])
 
 

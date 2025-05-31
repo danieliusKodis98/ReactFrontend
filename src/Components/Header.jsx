@@ -4,6 +4,7 @@ import LogoutButton from "./HeaderComponents/LogoutButton";
 import Home from "./HeaderComponents/Home";
 import Upload from "./HeaderComponents/Upload";
 import Favorite from "./HeaderComponents/Favorite";
+import MyRecipe from "./HeaderComponents/MyRecipe";
 function Header({value, setValue}){
 
     return(
@@ -16,6 +17,7 @@ function Header({value, setValue}){
 </div>
 <div className="right">
 <Upload></Upload>
+<MyRecipe></MyRecipe>
 <Favorite></Favorite>
 <LogoutButton></LogoutButton>
 </div>

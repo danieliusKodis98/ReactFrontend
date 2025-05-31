@@ -4,7 +4,7 @@ function UploadCategoryRecepi({ value, onChange }) {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8080/category', {
+    fetch('http://localhost:8080/category/names', {
       method: 'GET',
       headers: {
         'Authorization': 'Bearer ' + localStorage.getItem('token'),
