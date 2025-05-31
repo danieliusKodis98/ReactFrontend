@@ -1,0 +1,9 @@
+
+.AddRecepiField{
+    direction: flex;
+
+    align-items: center;
+  justify-content: center; 
+    height: 50px;
+    background-color: rgb(105, 131, 131);
+}

@@ -4,7 +4,7 @@ function Upload(){
 
     return(
           <Link to={`/upload`}>
-    <div  onclassName='uploadButton'>Upload</div>
+    <div  className='uploadButton'>Upload</div>
     </Link>
     );
     

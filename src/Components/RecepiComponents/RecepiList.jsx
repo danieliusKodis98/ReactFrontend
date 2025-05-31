@@ -46,7 +46,7 @@ function ShowRecepiList({value}){
       const url =
         params.toString().length > 0
           ? `http://localhost:8080/recepi/filter?${params.toString()}`
-          : "http://localhost:8080/recepi";
+          : "http://localhost:8080/recepi/recepidto";
 
         const response = await fetch(url, {
           method: "GET",

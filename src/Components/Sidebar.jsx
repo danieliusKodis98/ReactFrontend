@@ -46,7 +46,7 @@ const [categories, setCategories] = useState([]);
  useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/category`, {
+        const response = await fetch(`http://localhost:8080/category/names`, {
           method: 'GET',
           headers: {
             'Authorization': 'Bearer ' + localStorage.getItem("token"),

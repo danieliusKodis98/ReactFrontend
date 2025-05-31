@@ -1,0 +1,75 @@
+body{
+
+margin-top: 0px;
+}
+.h1{
+margin-top: 0;
+   background-color: blue;
+}
+.recepiCreation{
+    display: flex;
+    
+     align-items: flex-start;
+    
+}
+.foto{
+    display: flex;
+    align-items: first baseline;
+    height: 250px;
+    width: 862px;
+    background-color: brown;
+    margin-bottom: 15px;
+}
+.nameDescriptionModule{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.label{
+
+}
+.recepiNameTextbox{
+  
+    width: 400px;
+    height: 25px;
+    
+}
+.descriptionArea{
+    width: 400px;
+    display: block;
+    height: 300px;
+}
+.uploadImage{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 385px;
+    background-color: blueviolet;
+}
+.cookingDescriptionArea{
+    width: 400px;
+    height: 385px;
+    background-color: rgb(54, 131, 150);
+}
+.recepi{
+    display: inline;
+}
+.container{
+    position: relative;
+    margin-bottom: 10px;
+    background-color: rgb(13, 13, 68);
+}
+.deleteButton{
+    position: absolute;
+    background-color: brown;
+    height: 15px;
+    width: 15px;
+    top:8px;
+    right:8px;
+display: flex;
+   align-items: center;
+  justify-content: center; 
+}
+.createRecepiButton{
+margin-bottom: 250px;
+}
